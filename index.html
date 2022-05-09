@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Simple Note App</title>
+</head>
+<body onload="checkLocalStorage()">
+    
+    <main class="container">
+
+        <!-- FORM INPUT NOTE -->
+        <form class="form_note" onsubmit="handleSubmit(event)" >
+
+            <label for="note">  Masukan Note  </label>
+            <textarea name="note" id="note" cols="30" rows="10"></textarea>
+            <button type="submit">
+                tambah catatan
+            </button>
+
+        </form>
+        <!-- END FORM INPUT NOTE -->
+
+        <!-- CARD CONTAINER -->
+        <section class="card_container" id="card_container">
+
+            <!-- DATA DISINI AKAN DI RENDER Dari JAVASCRIPT -->
+            
+        </section>
+        <!-- END CARD CONTAINER -->
+
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
